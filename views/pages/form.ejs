@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header2'); %>
+    </header>
+    <main>
+      <div class="col jumbotron m-5 border border-dark">
+        <div class="col jumbotron p-5 text-center m-5 border border-dark">
+          <h1>Ingrese el producto</h1>
+          <form id="form">
+            <label name="articulo">Nombre</label><br>
+            <input class="text-center" placeholder="Ingresar artículo"  name="articulo"/><br>
+            <label name="precio">Precio</label><br>
+            <input class="text-center" placeholder="Ingresar precio" name="precio" type="number" step="any"/><br>
+            <label name="imagen">Foto URL</label><br>
+            <input class="text-center p-3" placeholder="Ingresar URL"name="imagen"/><br><br>
+            <input class="p-3 btn-white btn-outline-dark value="Enviar" type="submit"/>
+            <hr>
+          </form>
+        </div>
+      </div>
+      <div id="real-time-products"></div>
+    </main>
+    <footer>
+      <%- include('../partials/footer'); %>
+    </footer>
+  </body>
+  </html>      

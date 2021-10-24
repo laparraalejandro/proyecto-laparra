@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <header><%- include('../partials/header2'); %></header>
+    <main>
+      <div class="jumbotron p-3">
+        <h1 class="text-center"><%= %>Listado de Productos</h1>
+      </div>
+      <% if( data.length ) { %>
+      <div class=" p-5 jumbotron m-3 border border-dark">
+        <table class="table border-dark">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Articulo</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Imagen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% data.forEach((listaProductos) => { %> 
+              <tr>
+              <th scope="row"><%= listaProductos.id %></th>
+              <td><%= listaProductos.articulo %></td>
+              <td><%= listaProductos.precio %></td>
+              <td><img src="<%= listaProductos.imagen %>" width="50px" height="50px"></td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+    </div>
+    <% } else { %>
+      <div class="text-center container alert alert-dark" role="alert">
+        <h4 class="alert-heading">Hubo un error!</h4>
+        <p class="">En este momento no hay stock de productos, si deseas agregar uno puedes presionar en añadir.</p>
+        <hr>
+        <p class="mb-0 pb-2">Deberás colocar nombre, precio e imagen del artículo para luego cargarlo.</p>
+        <a href="/form" class="btn btn-dark btn-large">Añadir</a>
+      </div>
+    <% }; %>      
+    </main>
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>

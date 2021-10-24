@@ -1,0 +1,26 @@
+[
+  {
+    "articulo": "Pantalon",
+    "precio": "824.99",
+    "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/369/862/products/55013-verde-11-0455f05d5112fee27f16035919693170-1024-1024.jpg",
+    "id": 1
+  },
+  {
+    "articulo": "Remera",
+    "precio": "300.00",
+    "imagen": "https://www.remerasya.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/r/e/remera_azul_lisa_2.jpg",
+    "id": 2
+  },
+  {
+    "articulo": "Clorazepam",
+    "precio": "230.00",
+    "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/467/469/products/gero-tucson-51-9d0da9c49df89e184416167632957489-1024-1024.jpg",
+    "id": 3
+  },
+  {
+    "articulo": "Vacio",
+    "precio": "180.00",
+    "imagen": "https://lh3.googleusercontent.com/proxy/whDXHDKHOePOLd0che27mrsQW4BS543LqtBX8NrSIgTwgV3_bOV9MUF-SFjXGB7OloGu8QZ9D22vAwB4F8cegcj3faG9N2fhsiyALPOCjYWPSzhPIx0EnM_dJQVcPziyAKc",
+    "id": 4
+  }
+]
